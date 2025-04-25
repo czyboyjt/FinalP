@@ -47,7 +47,7 @@ body {
    left: 0;
    width: 100%;
    height: 100%;
-   background-color: rgba(0, 0, 0, 0.2); /* Adjust opacity to darken more/less */
+   background-color: rgba(0, 0, 0, 0.2);
    z-index: 1;}
 
 .text {
@@ -109,6 +109,12 @@ body {
    color: #9F2838;
    transform: translateY(-3px);
    transition: 0.3s;
+}
+
+.close:focus, .play:focus {
+   transform: translateY(-3px);
+   transition: 0.3s;
+   border: white solid 2px;
 }
 
 .play {
@@ -221,3 +227,50 @@ body {
    opacity: 0;
 }
 
+@media (prefers-reduced-motion) {
+   .mimage {
+      transition: none;
+   }
+   .mimage1 {
+      transition: none;
+   }
+   .overlay {
+      transition: none;
+   }
+   .text {
+      transition: none;
+      animation: none;
+   }
+   .quote {
+      transition: none;
+      animation: none;
+   }
+   .speaker {
+      transition: none;
+      animation: none;
+   }
+   .tag {
+      transition: none;
+      animation: none;
+   }
+   .close {
+      transition: none;
+      animation: none;
+   }
+   .play {
+      transition: none;
+      animation: none;
+   }
+   .music {
+      transition: none;
+      animation: none;
+   }
+   .enter {
+      transition: none;
+      animation: none;
+   }
+   :hover {
+      transition: none;
+      animation: none;
+   }
+ }

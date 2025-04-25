@@ -73,3 +73,35 @@
 .mimage {
   animation: drift 10s ease infinite alternate;
 }
+
+@media (prefers-reduced-motion) {
+  .mimage {
+    animation: none;
+  }
+
+  .mimage1 {
+    animation: none;
+  }
+
+  .choice {
+    opacity: 1;
+    animation: none;
+    transition: none;
+    transform: none;
+  }
+
+  .text {
+    opacity: 1;
+    animation: none
+  }
+
+  .close, .music, .play {
+    opacity: 1;
+    animation: none
+  }
+
+  .tag {
+    opacity: 1;
+    animation: none
+  }
+}
